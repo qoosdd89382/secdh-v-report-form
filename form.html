@@ -1,0 +1,36 @@
+
+<html>
+  <head>
+    <style type="text/css"> 
+      *{
+        box-sizing: border-box;
+      }
+      html, body {
+        border:0;
+        padding:0;
+        margin:0;
+      }  
+      h3 { text-align:center; }
+      form, #output { width:100%; height: 100%; margin:auto; border: 0px solid #333;
+      background-image: url();
+      background-repeat: no-repeat;
+      background-position: top center; }
+      input { display:block; margin: 5px; width:90%; height:2em;}
+      #output { padding:20px;word-wrap:break-word; }
+    </style> 
+  </head>
+  <body>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none;"  onload="this.onload=function(){window.location='fin.html'}"></iframe>
+
+    <h3>成果報告書上傳</h3>
+
+    <form action="https://script.google.com/macros/s/AKfycbwYpztyEJo5_ejyCHuUDXfBM9DApHLcIgrdR5k_9lWONRdAqqLn/exec" method="post" target="hidden_iframe">
+    <input type="hidden" name="method" value="write" />
+    <input type="text" name="school" placeholder="學校名稱" title="學校名稱" /><br/>
+    <input type="text" name="vtitle" placeholder="影片名稱  (一次以一部影片為限，如有多部，請分多次登記)" title="影片名稱" /><br/>
+    <input type="text" name="vlink" placeholder="影片網址  (一次以一部影片為限，如有多部，請分多次登記)" title="影片網址" /><br/>
+    <input type="submit" value="提交" />
+
+    </form>
+  </body>
+</html>
